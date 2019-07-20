@@ -103,7 +103,7 @@
     &-selected-value {
       float: left;
       max-width: 100%;
-      padding-right: 20px;
+      // padding-right: 20px;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -375,6 +375,12 @@
 
   &-allow-clear &-selection--single &-selection-selected-value {
     padding-right: 16px;
+  }
+
+  &-selection--single {
+    .@{select-prefix-cls}-selection__rendered {
+      margin-right: 25px;
+    }
   }
 
   &-allow-clear &-selection--multiple &-selection__rendered,
